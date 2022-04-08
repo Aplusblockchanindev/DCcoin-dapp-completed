@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { ethers, utils } from "ethers";
 import abi from "./contracts/DCCoin.json";
 
-
 function App() {
   const [isWalletConnected, setIsWalletConnected] = useState(false);
   const [inputValue, setInputValue] = useState({ walletAddress: "", transferAmount: "", burnAmount: "", mintAmount: "" });
@@ -14,7 +13,7 @@ function App() {
   const [yourWalletAddress, setYourWalletAddress] = useState(null);
   const [error, setError] = useState(null);
 
-  const contractAddress = '0x070765B86DAeE9F32dc0cF4115a1384B2DDA34aB';
+  const contractAddress = '0x070765B86DAeE9F32dc0cF4115a1384B2DDA34aB'; //Address where the contract deployed
   const contractABI = abi.abi;
 
   const checkIfWalletIsConnected = async () => {
