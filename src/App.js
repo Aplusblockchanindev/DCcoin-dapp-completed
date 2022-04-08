@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { ethers, utils } from "ethers";
 import abi from "./contracts/DCCoin.json";
 
+
 function App() {
   const [isWalletConnected, setIsWalletConnected] = useState(false);
   const [inputValue, setInputValue] = useState({ walletAddress: "", transferAmount: "", burnAmount: "", mintAmount: "" });
